@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Roboto+Condensed:ital@1&family=Roboto+Mono&display=swap");
+body {
+  margin: 0;
+  text-align: center;
+  background-color: rgb(1, 41, 76);
+  color: rgb(50, 51, 53);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(https://usagif.com/wp-content/uploads/gifs/coin-flip-33.gif);
+  background-repeat: no-repeat;
+  background-position-x: 14rem;
+  background-size: 11rem;
+}
+
+.title {
+  text-align: initial;
+}
+
+h1 {
+  font-weight: 700;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Mulish", sans-serif;
+}
+.boxDaddy {
+  display: flex;
+  justify-content: center;
+}
+
+/* .box-son{
+
+} */
+
+.box {
+  /* border: 4px  rgba(1, 41, 76, 0.945) solid; */
+  border: 4px rgb(1, 33, 59) solid;
+  background-color: white;
+  border-radius: 0.7rem;
+  width: 34rem;
+  height: 24rem;
+  margin-bottom: 4rem;
+}
+
+input {
+  width: 12rem;
+  height: 3rem;
+  border-radius: 0.4rem;
+  font-size: 1.09rem;
+  cursor: pointer;
+}
+
+.money {
+  width: 12.5rem;
+  height: 3.4rem;
+  border-radius: 0.4rem;
+  font-size: 1.09rem;
+  cursor: pointer;
+  font-family: "Mulish", sans-serif;
+}
+
+.buscar {
+  width: 12.5rem;
+  height: 3.4rem;
+  border-radius: 0.4rem;
+  font-size: 1.09rem;
+  border: 2.5px rgb(192, 144, 22) solid;
+  background-color: goldenrod;
+  transition: transform 0.4s ease-in-out;
+  font-family: "Mulish", sans-serif;
+}
+
+.buscar:hover {
+  transform: scale(1.02);
+  /* cursor: url('//assets/img/faviconsd.ico'),auto; */
+  cursor: url(../img/faviconsd.ico), auto;
+}
+
+.total-valor-dom {
+  margin-top: 3rem;
+  font-family: "Mulish", sans-serif;
+}
+
+.graphic {
+  width: 44rem;
+  padding-top: 1rem;
+}

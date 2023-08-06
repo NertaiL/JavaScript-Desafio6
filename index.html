@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor</title>
+    <link rel="stylesheet" href="assets/css/stylemoney.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="boxDaddy">
+      <div class="box-son">
+        <h1 class="title">Conversor a CLP</h1>
+        <form id="formulario" class="box">
+          <h2>Pesos CLP</h2>
+          <input
+            type="number"
+            min="0"
+            placeholder="Ingrese el monto en CLP"
+            name="valor"
+          />
+          <h2>Moneda a Convertir</h2>
+          <select name="moneda" class="money">
+            <option value="">Tipo De Cambio</option>
+            <option value="dolar">Dolar</option>
+            <option value="euro">Euro</option>
+            <option value="uf">Uf</option>
+            <option value="bitcoin">Bitcoin</option>
+            <option value="utm">Utm</option>
+          </select>
+          <button type="submit" class="buscar">Buscar</button>
+          <!-- type es para que al momento de apretar el button el va a mandar la informacion y cuando la api responda de una forma asyncrona me va a mostrar e dato -->
+
+          <div class="cambio">
+            <h3 id="total-valor" class="total-valor-dom"></h3>
+            <!--  para ver el total calculado  -->
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="graphic">
+      <canvas id="myChartt" class="myChartstyle"></canvas>
+      <!--  canvas se utiliza para los graficos y sale en la libreria -->
+    </div>
+    <script src="assets/js/conversor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.3/chart.min.js"></script> -->
+    <!-- libreria del grafico -->
+  </body>
+</html>
